@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Countries</title>
+	<meta charset="utf-8">
+	<meta charset="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styleFORindex2.css">
+</head>
+<body style="background-color: grey; ">
+
+	<!-- Navigation Bar Begin-->
+	<div class="topnav">
+		<a href="" style="float: left;">Country</a>
+
+		<div class="topnavSearch">
+			<div class="search-container">
+				<form action="">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit">
+
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+	<!--	  <div class="numbertext">1 / 4</div>   -->
+		  <img src="london.jpg" alt="london" style="width:650px; height: 350px">
+		</div>
+
+		<div class="mySlides fade">
+	<!--	  <div class="numbertext">2 / 4</div>   -->
+		  <img src="oslo.jpg" alt="oslo" style="width:650px; height: 350px">
+		</div>
+
+		<div class="mySlides fade">
+	<!--	  <div class="numbertext">3 / 4</div>   -->
+		  <img src="paris.jpg" alt="paris" style="width:650px; height: 350px">
+		</div>
+
+		<div class="mySlides fade">
+	<!--	  <div class="numbertext">4 / 4</div>    -->
+		  <img src="tokyo.jpg" alt="tokyo" style="width:650px; height: 350px">
+		</div>
+	</div>
+	<br>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none"; 
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1} 
+		    slides[slideIndex-1].style.display = "block"; 
+		    setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+	<!--list with countries -->
+	<section class="w3-row-padding w3-center w3-light-grey">
+		<article class="w3-third">
+			<p>John</p>
+			<img src="" alt="europe" style="width:100%">
+			<p>John is the smartest.</p>
+		</article>
+		<article class="w3-third">
+			<p>Paul</p>
+			<img src="" alt="Asia" style="width:100%">
+			<p>Paul is the prettiest.</p>
+		</article>
+		<article class="w3-third">
+			<p>Ringo</p>
+			<img src="" alt="America" style="width:100%">
+			<p>Ringo is the funniest.</p>
+		</article>
+		<article class="w3-third">
+			<p>John</p>
+			<img src="" alt="Australia" style="width:100%">
+			<p>John is the smartest.</p>
+		</article>
+	</section>
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+		<a href="#"><i class="fa fa-facebook-official"></i></a>
+		<a href="#"><i class="fa fa-pinterest-p"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-flickr"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<p class="w3-medium">
+			Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+		</p>
+	</footer>
+</body>
+</html>

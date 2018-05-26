@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Countries</title>
+	<meta charset="utf-8">
+	<meta charset="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: grey; ">
+
+		<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 4</div>
+	  <img src="london.jpg" style="width:800px; height: 480px">
+	  <div class="text">Caption Text</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 4</div>
+	  <img src="oslo.jpg" style="width:800px; height: 480px">
+	  <div class="text">Caption Two</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 4</div>
+	  <img src="paris.jpg" style="width:800px; height: 480px">
+	  <div class="text">Caption Three</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 4</div>
+	  <img src="tokyo.jpg" style="width:800px; height: 480px">
+	  <div class="text">Caption Three</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+
+
+	<div id="London" class="tabcontent">
+		<img src="london.jpg" alt="London" style="width: 100%;height: 100%;">
+	  <!--<h3>London</h3>
+	  <p>London is the capital city of England.</p>-->
+	</div>
+
+	<div id="Paris" class="tabcontent">
+	  <img src="paris.jpg" alt="Paris" style="width: 100%;height: 100%;">
+	  <!--<h3>Paris</h3>
+	  <p>Paris is the capital of France.</p> -->
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+	  <img src="tokyo.jpg" alt="Tokyo" style="width: 100%;height: 100%;">
+	  <!--<h3>Tokyo</h3>
+	  <p>Tokyo is the capital of Japan.</p> -->
+	</div>
+
+	<d iv id="Oslo" class="tabcontent">
+	  <img src="oslo.jpg" alt="Oslo" style="width: 100%;height: 100%;">
+	  <!--<h3>Oslo</h3>
+	  <p>Oslo is the capital of Norway.</p> -->
+	</div>
+
+	<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+	<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+	<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+	<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+
+	<script>
+	function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+	}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
