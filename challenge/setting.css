@@ -1,0 +1,441 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.topnav {
+	background-color: #313030;
+	padding-left: 300px;
+	padding-top: 0px;
+	width: 1000px;
+	height: 45px;
+	top: 0;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 16px;
+}
+
+.topnav a:hover {
+	background-color: white;
+	color: black; 
+}
+
+.active {
+	background-color: #ff3f40;
+	color: white; 
+}
+
+.row {
+	background-color: #f6f2f2;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 164px; 
+	height: 500px;
+}
+
+.left {
+	flex: 550px;
+}
+
+#header-organisation {
+	font-size: 40pt;
+	letter-spacing: 0.1em;
+	font-weight: bold; 
+}
+
+.strong-organisation {
+	padding-top: 20px;
+	line-height: 18px;
+	width: 390px;
+	font-size: 10pt;
+	color: black;
+}
+#button-contact {
+	padding-top: 60px;
+}
+
+#button-contact-us {	
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	background-color: #ff2d2d;
+	color: white;
+	border-radius: 5px;
+}
+
+.right {
+	flex: 50%; 
+}
+
+#video-organisation {
+	padding-top: 60px;
+	height: 280px;
+	width: 440px;
+	background-color: lightgrey;
+}
+
+#row-provide {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 164px; 
+	padding-top: 30px;
+	height: 450px;
+}
+
+#provide {
+	flex: 400px;
+}
+
+.header-provide {
+	font-size: 25pt;
+	font-weight: 550;
+}
+
+#button-learn-more {
+	background-color: white;
+	border-radius: 5px;
+	border: 2px solid red;
+	color: red;
+	text-align: center;
+	width: 150px;
+	height: 40px;
+}
+#management-logo {
+	flex: 25%;
+}
+
+.provide-img {
+	height: 20px;
+	width: 10px;
+	background-color: lightgrey;
+	padding-top: 13px;
+}
+
+.provide-header {
+	font-size: 25px;
+	color: #4c4c4c;
+	padding-top: 15px;
+}
+
+.provide-text {
+	padding-top: 20px;
+	line-height: 18px;
+	width: 190px;
+	font-size: 10pt;
+	color: #4c4c4c;
+	padding-bottom: 20px;
+}
+
+#UI-animation {
+	flex: 25%;
+}
+
+.futere {
+	height: 900px;
+}
+
+#header-featere-product {
+	padding-top: 30px;
+	font-size: 25pt;
+	font-weight: 550;
+	text-align: center;
+}
+
+#product-text {
+	padding-top: 20px;
+	font-size: 10pt;
+	text-align: center;
+	line-height: 18px;
+	padding-left: 440px;
+	width: 860px;
+	padding-bottom: 20px;
+}
+
+.nav {
+	padding-left: 320px;
+	padding-top: 60px;
+	width: 1160px;
+	height: 110px;
+	top: 0;
+	overflow: hidden;
+}
+
+.nav a {
+	position: relative;
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 16px;
+}
+
+.nav a:hover {
+	color: white; 
+	background-color: black;
+	border-radius: 5px;
+}
+
+#active-nav {
+	background-color: white;
+	color: red; 
+}
+#active-nav :hover {
+	color: white;
+	background-color: blackl
+	border-radius: 5px;
+}
+
+#frame {
+	width: 1000px;
+	height: 500px;
+	background-color: lightgrey;
+}
+
+.meet-our-team {
+	width: 1000px;
+	height: 650px;
+}
+
+.avatars {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+.left-img {
+	width: 400px;
+}
+
+#active-img {
+	height: 350px;
+	width: 350px;
+}
+
+.text-avatar {
+	padding-top: 20px;
+	line-height: 18px;
+	width: 390px;
+	font-size: 10pt;
+	color: black;
+}
+
+.header-avatar {
+	font-size: 20pt;
+	font-weight: 500; 
+}
+
+.avatar-cotial {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+	padding-top: 40px;
+}
+
+li {
+	float: left;
+	padding-right: 16px;
+	padding-bottom: 30px;
+}
+
+li a {
+	font-style: italic;
+	color: black;
+	text-align: left;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: red;
+}
+
+.avatar-img {
+	float: left;
+	width: 133px;
+	height: 133px;
+	position: relative;
+}
+
+.avatar-img a {
+	display: block;
+}
+
+.img-avatar {
+	height: 133px;
+	width: 133px;
+	opacity: 1;
+	display: block;
+	backface-visibility: hidden;
+	transition: .5s ease;
+}
+
+.bottom {
+	opacity: 0;
+	transition: .5s ease;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.avatar-img:hover .img-avatar {
+	opacity: 0.3;
+}
+
+.avatar-img:hover .bottom {
+	opacity: 1;
+}
+
+.text-name {
+	background-color: #4CAF50;
+	color: white;
+	width: 133px;
+	height: 60px;
+	font-size: 12px;
+	padding: 16px 32px;
+}
+
+.sub {
+	background-color: #f5bfba;
+	height: 400px;
+}
+
+.header-sub {
+	padding-top: 80px;
+	color: white;
+	text-align: center; 
+	font-size: 25pt;
+	font-weight: 550;
+}
+
+.text-sub {
+	padding-top: 30px;
+	color: white; 
+	text-align: center;
+	font-size: 11pt;
+}
+
+.adr-sub {
+	padding-left: 360px;
+	padding-top: 50px;
+}
+
+.area-adr {
+	width: 420px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.btn-sub {
+	background-color: #ff2d2d;
+	color: white;
+	width: 130px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.get-in-touch {
+	padding-left: 164px;
+	padding-top: 70px;
+	height: 680px;
+	width: 100%;
+}
+
+.msg-mail {
+	padding-left: 20px;
+	border-radius: 5px;
+	height: 40px;
+	width: 225px;
+	background-color: #e5e5e5;
+}
+
+.type-msg {
+	padding-left: 20px;
+	padding-top: 10px;
+	width: 500px;
+	height: 180px;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+}
+
+#button-send-msg {
+	width: 500px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #ff3b3b;
+	color: white;
+}
+
+.contact-inf {
+	padding-top: 90px;
+	padding-left: 50px;
+	background-color: #2d2d2d;
+	color: white;
+	line-height: 18px;
+	height: 325px;
+	width: 400px;
+}
+
+.contact-info {
+	padding-top: 20px;
+	font-size: 10pt;
+	line-height: 25px;
+	color: #d5d5d5;
+}
+
+.footer {
+	background-color: #313030;
+	height: 80px;
+	padding-top: 20px;
+}
+
+.foot-rights {
+	color: #d5d5d5;
+	font-size: 11pt;
+	padding-left: 100px;
+	padding-top: 12px;
+}
+
+.cotial {
+	height: 0.1px;
+	width: 34px;
+	background-color: white;
+	/*color: white;*/
+	/*\padding-left: 500px;*/
+	/*padding-top: 24px;*/
+	border-radius: 50%;
+}
